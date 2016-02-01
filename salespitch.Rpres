@@ -1,0 +1,50 @@
+Child Height Estimator S.I.
+========================================================
+author: Last minute solutions & 2hrs before deadline Inc.
+date: January 31st, 2016
+
+Child Height Estimator S.I.
+========================================================
+
+- Ever wondered how high your child will grow to be? 
+- You know about the Galton data set in R but your familiarity with arbitrary metric systems based on some dude's body parts is inexistent?
+
+*We have the product for you!*
+
+Introducing the "Child Height Estimator Système international d'unités" (tm) (patent pending)
+
+Child Height Estimator S.I.
+========================================================
+As you may know, estimating a child's height based on the parent's heights is as easy as running the following code in R:
+```{r}
+library(UsingR)
+data(galton)
+mod<-lm(child~parent, data=galton)
+dad<-74.8
+mom<-67
+chld<-
+  predict(
+    mod,
+    data.frame(parent=c((mom*1.08+dad)/2)),
+    interval="predict")
+chld
+```
+Anyone can do that, but what does `r chld[1]` mean? is it short/tall/what you expected? Who knows...
+
+Child Height Estimator S.I.
+========================================================
+We do!
+
+After years of research in our laboratories our scientists developed a top secret method of converting between undescifrable numbers and units **you** can relate to. 
+
+Just go to https://titosdragonas.shinyapps.io/proj01/ and enter the parents' heights in centimeters to get back the child's height in the same units.
+
+Child Height Estimator S.I.
+========================================================
+
+If converting from meters to centimeters isn't your thing you will be able to upgrade to Child Height Estimator Pro soon.
+
+*The metric system is the tool of the devil! My car gets forty rods to the hogshead and that's the way I likes it.*
+--Abe Simpson
+
+Don't be like Abe, use Child Height Estimator S.I.
